@@ -1,7 +1,8 @@
 def int_to_roman(num):
+    roman = ()
     dec_1_int = num // 1000
     num = num - dec_1_int*1000
-    roman = "M"
+    roman = dec_1_int*"M"
     print(f"{num}, {dec_1_int}")
     dec_2_int = (num // 100)
     num = num - dec_2_int*100
